@@ -22,9 +22,6 @@ RUN mkdir /app
 RUN git clone -b docker https://github.com/turt2live/matrix-dimension.git /app
 WORKDIR /app
 
-# Clone the dimension GitHub Repository
-RUN git clone https://github.com/turt2live/matrix-dimension.git
-
 # Install Dimension
 RUN cd matrix-dimension
 RUN npm install
